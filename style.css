@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanuman", serif;
+}
+
+@media only screen and (min-width: 769px) {
+    * {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ededed;
+    }
+
+}
+
+nav {
+    background-color: #0000;
+}
+
+.nav-bg {
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+
+    main,
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    section {
+        margin: 1.5rem 0;
+        background-color: #ffffff;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    object-fit: contain;
+}
+
+.no-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-size-2 {
+    font-size: 1.5rem;
+}
+
+.shop-bg {
+    background:url("./assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media only screen and (min-width: 769px) {
+    .shop-bg {
+        background-size: 100% 140%;
+    }
+}
+
+.shop {
+    font-size: 3rem;
+    font-family: "Syncopate", sans-serif;
+    color: #000000;
+    text-decoration: none;
+    margin: 1.5rem;
+}
+
+.nav-cointainer {
+    display: flex;
+    align-items: start;
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 769px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1.5rem;
+        box-shadow: .1px .1px 1px;
+        border-radius: .4rem;
+    }
+}
+
+.card {
+    border: none;
+}
+
+@media only screen and (min-width: 769px) {
+    .card {
+        box-shadow: .3px .3px 5px;
+        border-radius: .4rem;
+        height: 25rem;
+        width: 18rem;
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.card-img {
+    height: 15rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .card-img {
+        height: 10rem;
+        width: 100%;
+    }
+}
+
+.card-body {
+    height: 10rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.btn-buy {
+    display: flex;
+    justify-self: end;
+}
+
+@media only screen and (min-width: 769px) {
+    .btn-buy {
+        width: 5.5rem;
+    }
+}
+
+.btn-summit {
+    display: grid;
+    justify-self: end;
+}
+
+@media only screen and (min-width: 769px) {
+    .btn-summit {
+        width: 4.5rem;
+    }
+}
+
+
+textarea {
+    resize: none;
+}
+
+.text-box {
+    height: 5rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .text-box {
+        width: 70%;
+    }
+}
+
+.avatar {
+    margin: 1rem;
+    border-radius: 50%;
+
+    max-width: 7rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .review {
+        box-shadow: .1px .1px 1px;
+        border-radius: .4rem;
+    }
+}
+
+
+
+.review-comments {
+    padding: 0 0 1rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .review-comments {
+        padding: 0 0 1rem 0;
+        box-shadow: .1px .1px 1px;
+        border-radius: .4rem;
+        width: 85%;
+    }
+}
+
+.comments-box {
+    margin: 1rem;
+    padding: .9rem;
+    border-radius: 1rem;
+    background-color: #e3e3e3;
+}
+
+@media only screen and (min-width: 769px) {
+    .comments-box {
+
+        width: 97%;
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .contact {
+        box-shadow: .1px .1px 1px;
+        border-radius: .4rem;
+        background-color: #bababa;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .contact-coments-title {
+        display: flex;
+        justify-content: start;
+        width: 70%;
+    }
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0 0 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 1px 0 1px;
+}
+
+.footer {
+    background-color: #0000;
+}
+
+@media only screen and (min-width: 769px) {
+    footer {
+        height: 4rem;
+        padding: 1.5rem 0 .5rem 0;
+    }
+}
+
+/*utilitarian*/
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}

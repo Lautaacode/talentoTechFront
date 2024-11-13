@@ -1,0 +1,1 @@
+Proyecto de talento tech, conformado por una pagina simple web con manejo en tecnologias de html, css, bootstrap, js.
