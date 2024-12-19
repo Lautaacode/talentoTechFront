@@ -70,7 +70,7 @@ header {
 }
 
 .shop-bg {
-    background:url("./assets/img/banner.png");
+    background:url("../assets/img/banner.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -147,6 +147,9 @@ img {
         flex-direction: column;
     }
 }
+.card-text{
+    overflow: hidden;
+}
 
 .btn-buy {
     display: flex;
@@ -172,7 +175,8 @@ img {
 
 
 textarea {
-    resize: none;
+    resize:none;
+    text-overflow: ellipsis;
 }
 
 .text-box {
@@ -267,6 +271,10 @@ footer {
         height: 4rem;
         padding: 1.5rem 0 .5rem 0;
     }
+}
+
+.shopping-cart{
+    height: 63.4vh ;
 }
 
 /*utilitarian*/
