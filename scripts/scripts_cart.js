@@ -1,13 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => 
-    {
+document.addEventListener("DOMContentLoaded", () => {
     const cartItemsStorage = JSON.parse(localStorage.getItem('cart')) || [];
     const cartTableBody = document.getElementById('cart-items');
     const totalgeneral = document.getElementById('total');
     let total = 0;
 
- 
-    cartItemsStorage.forEach(item => 
-    {
+
+    cartItemsStorage.forEach(item => {
         const row = document.createElement('tr');
 
         const nameCell = document.createElement('td');
@@ -22,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () =>
         cantidadCell.textContent = 1;
         row.appendChild(cantidadCell);
 
-        const subtotal = item.price; 
-        const subtotalCell= document.createElement('td');
+        const subtotal = item.price;
+        const subtotalCell = document.createElement('td');
         subtotalCell.textContent = `$${subtotal}`;
         row.appendChild(subtotalCell);
 
@@ -35,14 +33,12 @@ document.addEventListener("DOMContentLoaded", () =>
 
     totalgeneral.textContent = total.toFixed(2);
 
-    document.getElementById('cart-clear').addEventListener('click', () => 
-    {
-        localStorage.removeItem('cart'); 
-        window.location.href = 'index.html'; 
+    document.getElementById('cart-clear').addEventListener('click', () => {
+        localStorage.removeItem('cart');
+        window.location.href = 'index.html';
     });
 
-    document.getElementById('complete-purchase').addEventListener('click', () => 
-    {
+    document.getElementById('complete-purchase').addEventListener('click', () => {
         Swal.fire({
             title: 'Compra Procesada',
             text: 'Se ha procesado la compra',
@@ -50,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () =>
             confirmButtonText: 'Aceptar'
         });
 
-        localStorage.removeItem('cart'); 
-        
+        localStorage.removeItem('cart');
+
         setTimeout(() => {
-        window.location.href = 'index.html'; 
-        }, 4000);     
+            window.location.href = 'index.html';
+        }, 4000);
     });
 });
